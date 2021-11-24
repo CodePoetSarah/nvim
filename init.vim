@@ -13,11 +13,14 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
+    Plug 'nvim-telescope/telescope-rg.nvim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'preservim/nerdcommenter'
+    Plug 'preservim/tagbar'
     Plug 'tpope/vim-sleuth'
+    Plug 'preservim/nerdtree'
 
 " Themes
     Plug 'arcticicestudio/nord-vim'
@@ -45,3 +48,10 @@ call plug#end()
 
 " Code Settings
    set number
+
+" Keybinds
+  nnoremap <C-n> :NERDTreeToggle<CR>
+  nnoremap <C-t> :TagbarToggle<CR>
+  nnoremap <C-f> :Telescope<CR>
+
+
