@@ -20,7 +20,9 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'preservim/nerdcommenter'
     Plug 'preservim/tagbar'
     Plug 'tpope/vim-sleuth'
-    Plug 'preservim/nerdtree'
+    Plug 'editorconfig/editorconfig-vim'
+    Plug 'folke/zen-mode.nvim'
+    Plug 'folke/twilight.nvim'
 
 " Themes
     Plug 'arcticicestudio/nord-vim'
@@ -62,9 +64,9 @@ call plug#end()
 
 " Code Settings
   set number
-  let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-pyright', 'coc-css', 'coc-pydocstring', 'coc-swagger', 'coc-yaml', 'coc-xml']
+  let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-pyright', 'coc-css', 'coc-pydocstring', 'coc-swagger', 'coc-yaml', 'coc-xml', 'coc-pairs', 'coc-explorer']
 " Keybinds
-  nnoremap <C-n> :NERDTreeToggle<CR>
+  nnoremap <C-e> <Cmd>CocCommand explorer<CR> 
   nnoremap <C-t> :TagbarToggle<CR>
   nnoremap <C-f> :Telescope<CR>
 
