@@ -6,3 +6,27 @@ My personal neovim setup for python development and writing articles
 - Startify https://github.com/nmhinz/vim-startify
 - Plug 'neoclide/coc.nvim
 - Telescope https://github.com/nvim-telescope/telescope.nvim
+- Plenary
+- Treesitter
+- Airline
+- Airline-themes
+- Nerdcommenter
+- Tagbar
+- Sleuth
+- EditorCofig
+- Zen Mode
+- Twilight
+
+## CoC Plugins
+- Git
+- Pyright
+- CSS
+- Pydocstring
+- Swagger
+- YAML
+- XML
+- Pairs
+- Explorer
+
+
+

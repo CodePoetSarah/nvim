@@ -43,7 +43,7 @@ call plug#end()
   let g:startify_custom_footer = [ ' -----------[ If it’s worth doing, it’s worth automating ]-----------' ]
   let g:startify_bookmarks = [{'s': '~/.local/src'}]
 
-" Theme
+" Appearance
   filetype plugin indent on
   syntax on
   colorscheme nord
@@ -64,10 +64,20 @@ call plug#end()
 
 " Code Settings
   set number
-  let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-pyright', 'coc-css', 'coc-pydocstring', 'coc-swagger', 'coc-yaml', 'coc-xml', 'coc-pairs', 'coc-explorer']
-" Keybinds
+  let g:coc_global_extensions = ['coc-json',
+        \ 'coc-git',
+        \ 'coc-pyright',
+        \ 'coc-css',
+        \ 'coc-pydocstring',
+        \ 'coc-swagger', 
+        \ 'coc-yaml',
+        \ 'coc-xml', 
+        \ 'coc-pairs', 
+        \ 'coc-explorer']
+
+" Keybinds and Commands
   nnoremap <C-e> <Cmd>CocCommand explorer<CR> 
   nnoremap <C-t> :TagbarToggle<CR>
   nnoremap <C-f> :Telescope<CR>
-
-
+  nnoremap <C-z> :ZenMode<CR>
+  command! -nargs=0 Prettier :CocCommand prettier.formatFile
