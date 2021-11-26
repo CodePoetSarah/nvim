@@ -17,12 +17,10 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
-    Plug 'preservim/nerdcommenter'
     Plug 'preservim/tagbar'
     Plug 'tpope/vim-sleuth'
     Plug 'editorconfig/editorconfig-vim'
     Plug 'folke/zen-mode.nvim'
-    Plug 'folke/twilight.nvim'
 
 " Themes
     Plug 'arcticicestudio/nord-vim'
@@ -47,9 +45,14 @@ call plug#end()
   filetype plugin indent on
   syntax on
   colorscheme nord
-  let g:airline_theme='base16'
   let g:airline_powerline_fonts=1
   let g:airline_skip_empty_sections = 1
+  let g:airline_detect_crypt=1
+  let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
+  let g:airline_section_c_only_filename = 1
+  let g:airline#extensions#whitespace#enabled = 0
+  let g:airline#extensions#wordcount#enabled = 1
+  let g:airline#extensions#wordcount#filetypes = '\vnotes|help|markdown|rst|org|text|asciidoc|'
 
 " Quality of Life Changes
   set cursorline

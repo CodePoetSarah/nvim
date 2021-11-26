@@ -10,10 +10,9 @@ My personal neovim setup for python development and writing articles
 - Treesitter
 - Airline
 - Airline-themes
-- Nerdcommenter
 - Tagbar
 - Sleuth
-- EditorCofig
+- EditorConfig
 - Zen Mode
 - Twilight
 
