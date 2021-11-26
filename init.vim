@@ -53,6 +53,7 @@ call plug#end()
   let g:airline#extensions#whitespace#enabled = 0
   let g:airline#extensions#wordcount#enabled = 1
   let g:airline#extensions#wordcount#filetypes = '\vnotes|help|markdown|rst|org|text|asciidoc|'
+  let g:airline_section_z = '%l:%c'
 
 " Quality of Life Changes
   set cursorline
