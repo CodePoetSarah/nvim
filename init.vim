@@ -45,6 +45,8 @@ call plug#end()
   filetype plugin indent on
   syntax on
   colorscheme nord
+
+" Status Line
   let g:airline_powerline_fonts=1
   let g:airline_skip_empty_sections = 1
   let g:airline_detect_crypt=1
@@ -54,6 +56,8 @@ call plug#end()
   let g:airline#extensions#wordcount#enabled = 1
   let g:airline#extensions#wordcount#filetypes = '\vnotes|help|markdown|rst|org|text|asciidoc|'
   let g:airline_section_z = '%l:%c'
+  let g:airline#extensions#tabline#enabled = 1 
+  let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Quality of Life Changes
   set cursorline
