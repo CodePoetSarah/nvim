@@ -14,11 +14,9 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
     Plug 'nvim-telescope/telescope-rg.nvim'
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'preservim/tagbar'
-    Plug 'tpope/vim-sleuth'
     Plug 'editorconfig/editorconfig-vim'
     Plug 'folke/zen-mode.nvim'
 
@@ -87,6 +85,7 @@ call plug#end()
         \ 'coc-pydocstring',
         \ 'coc-swagger', 
         \ 'coc-yaml',
+        \ 'coc-toml',
         \ 'coc-xml', 
         \ 'coc-pairs', 
         \ 'coc-explorer']
