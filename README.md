@@ -7,7 +7,6 @@ My personal neovim setup for python development and writing articles
 - Plug 'neoclide/coc.nvim
 - Telescope https://github.com/nvim-telescope/telescope.nvim
 - Plenary
-- Treesitter
 - Airline
 - Airline-themes
 - Tagbar
