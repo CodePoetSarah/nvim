@@ -16,15 +16,24 @@ My personal neovim setup for python development and writing articles
 - Twilight
 
 ## CoC Plugins
-- Git
-- Pyright
-- CSS
-- Pydocstring
-- Swagger
-- YAML
-- XML
-- Pairs
-- Explorer
+- git
+- pyright
+- css
+- cssmodules
+- eslint
+- sh
+- tsserver
+- sql
+- html
+- json
+- markdownlint
+- pydocstring
+- swagger
+- yaml
+- toml
+- xml
+- pairs
+- explorer
 
 
 
